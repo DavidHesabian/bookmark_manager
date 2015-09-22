@@ -15,7 +15,7 @@ class App < Sinatra::Base
   # DataMapper::Logger.new($stdout, :debug)
   DataMapper.finalize
   DataMapper.auto_upgrade!
-  byebug
+  #byebug
 
   get '/' do
     @links = Link.all
